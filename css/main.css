@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Metal Macabre';
+    src: url(../font/MetalMacabre.ttf)
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.threeDContent {
+    background-image: url(../img/Moon2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.Logo {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 1px 1px #ffffffcc;
+    font-family: 'Metal Macabre', sans-serif;
+}
+
+.content {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
