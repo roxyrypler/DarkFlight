@@ -9,6 +9,7 @@ var mixer2 = null;
 var mixer3 = null;
 let rainGeo = null;
 let rain = null;
+let cloudParticles = [];
 let rainCount = 15000;
 var clock = new THREE.Clock();
 let canvasHolder = document.getElementById('threeDContent');
@@ -115,6 +116,30 @@ function loadScene() {
     });
     rain = new THREE.Points(rainGeo, rainMaterial);
     scene.add(rain);
+
+    let loaders = new THREE.TextureLoader();
+    loaders.load("../3D/textures/smoke-1.png", function (texture) {
+        cloudGeo = new THREE.PlaneBufferGeometry(500, 500);
+        cloudMaterial = new THREE.MeshLambertMaterial({
+            map: texture,
+            transparent: true
+        });
+        for (let p = 0; p < 1; p++) {
+            let cloud = new THREE.Mesh(cloudGeo, cloudMaterial);
+            cloud.position.set(
+                0,
+                100,
+                Math.random() * 200 - 250
+            );
+            cloud.rotation.x = 1.16;
+            cloud.rotation.y = -0.12;
+            cloud.rotation.z = Math.random() * 360;
+            cloud.material.opacity = 0.8;
+            cloudParticles.push(cloud);
+            scene.add(cloud);
+        }
+        render();
+    });
 }
 
 window.addEventListener('resize', onWindowResize, false);
@@ -143,6 +168,10 @@ function render() {
     if (mixer3 != null) {
         mixer3.update(delta);
     };
+
+    cloudParticles.forEach(p => {
+        p.rotation.z -= 0.001;
+    });
 
     rainGeo.vertices.forEach(p => {
         p.velocity -= 0.001 + Math.random() * 0.001;
