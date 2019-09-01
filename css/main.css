@@ -60,9 +60,81 @@ body {
     transition: all 0.3s ease 0s;
 }
 
-.content {
+.contentAbout {
+    position: absolute;
     background-color: black;
     width: 100%;
     height: 100%;
     color: white;
+}
+
+.contentAbout__header1 {
+    font-family: 'Roboto', sans-serif;
+    align-content: center;
+    text-align: center;
+    z-index: 10;
+}
+
+.contentAbout__header2 {
+    font-family: 'Metal Macabre', sans-serif;
+    text-align: center;
+    transform: translate(-115px, -40px);
+    z-index: 10;
+}
+
+.gameDevelopment {
+    position: absolute;
+    width: 50%;
+    color: aqua;
+}
+
+.webDevelopment {
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    color: aquamarine
+}
+
+.contentrouting {
+    position: absolute;
+    top: 200%;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.contentrouting__some {
+    position: absolute;
+    width: 50%;
+    color: aqua;
+}
+
+.contentrouting__blog {
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    color: aquamarine
+}
+
+.contentcontact {
+    position: absolute;
+    top: 300%;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.contentcontact__ansatte {
+    position: absolute;
+    width: 50%;
+    color: aqua;
+}
+
+.contentcontact__contact {
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    color: aquamarine
 }
