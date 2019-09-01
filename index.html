@@ -3,6 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Darkflight Web site">
+  <meta name="keywords" content="HTML,CSS,JavaScript">
+  <meta name="author" content="Patrick Lie">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DarkFlight</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <!-- Bootstrap CSS -->
@@ -24,32 +28,93 @@
     <h1 class="contentAbout__header1"> hat we do</h1>
     <h1 class="contentAbout__header2">W</h1>
 
-    <div class="gameDevelopment" >
+    <div class="gameDevelopment">
       <h2>game dev</h2>
     </div>
-    <div class="webDevelopment" >
-      <h2  > web dev</h2>
+    <div class="webDevelopment">
+      <h2> web dev</h2>
     </div>
   </div>
 
-  <div class="contentrouting" >
-      <h1 class="contentrouting__header2">Where to find us</h1>
-  
-      <div class="contentrouting__some" >
-        <h2>SoMe</h2>
-      </div>
-      <div class="contentrouting__blog" >
-        <h2  > Blog</h2>
-      </div>
+  <div class="contentrouting">
+    <h1 class="contentrouting__header2">Our digital precence</h1>
+
+    <div class="contentrouting__some">
+      <h2>SoMe</h2>
+    </div>
+    <div class="contentrouting__blog">
+      <h2> Blog</h2>
+    </div>
   </div>
 
-  <div class="contentcontact" >
-      <div class="contentcontact__ansatte" >
-        <h2>us</h2>
+  <div class="contentcontact">
+    <div class="contentcontact__ansatte">
+      <div class="container">
+        <div class="row ansatteContain">
+          <!-- people -->
+          <div class="col-md-6 wow animated fadeInRight" data-wow-delay=".2s">
+            <div class="picture1Holder">
+              <div class="picture1"></div>
+              <div class="picture1__text">
+                <p>name</p>
+                <p>role</p>
+              </div>
+            </div>
+            <div class="picture2Holder">
+              <div class="picture2"></div>
+              <div class="picture2__text" >
+                <p>name</p>
+                <p>role</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="contentcontact__contact" >
-        <h2  > contact</h2>
+
+    </div>
+    <div class="contentcontact__contact">
+      <div class="container contentcontact__contact--elements">
+        <div class="row formElements">
+          <!-- contact form -->
+          <div class="col-md-6 wow animated fadeInRight" data-wow-delay=".2s">
+            <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+              <!-- Name -->
+              <div class="form-group label-floating">
+                <label class="control-label" for="name">Name</label>
+                <input class="form-control" id="name" type="text" name="name" required
+                  data-error="Please enter your name">
+                <div class="help-block with-errors"></div>
+              </div>
+              <!-- email -->
+              <div class="form-group label-floating">
+                <label class="control-label" for="email">Email</label>
+                <input class="form-control" id="email" type="email" name="email" required
+                  data-error="Please enter your Email">
+                <div class="help-block with-errors"></div>
+              </div>
+              <!-- Message -->
+              <div class="form-group label-floating">
+                <label for="message" class="control-label">Message</label>
+                <textarea class="form-control" rows="3" id="message" name="message" required
+                  data-error="Write your message"></textarea>
+                <div class="help-block with-errors"></div>
+              </div>
+              <!-- Form Submit -->
+              <div class="form-submit mt-5">
+                <button class="btn btn-common" type="submit" id="form-submit"><i
+                    class="material-icons mdi mdi-message-outline"></i> Send Message</button>
+                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                <div class="clearfix"></div>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
+    </div>
+
+    <div class="footer">
+
+    </div>
   </div>
 
 
