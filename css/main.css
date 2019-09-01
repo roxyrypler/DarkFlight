@@ -10,10 +10,12 @@ html {
 body {
     margin: 0px;
     padding: 0px;
+	background-color: black;
+	overflow-x: hidden;
 }
 
 .threeDContent {
-    background-image: url(../img/Moon2.jpg);
+    background-image: url(../img/Moon.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -43,7 +45,7 @@ body {
     background: #fdfdfd;
     color: #000000 !important;
     font-weight: 100;
-    padding: 5px;
+    padding: 20px;
     text-transform: uppercase;
     border-radius: 6px;
     display: inline-block;
@@ -126,77 +128,46 @@ body {
     color: white;
 }
 
-.contentcontact__ansatte {
-	margin-top: 15%;
-    position: absolute;
-    width: 50%;
-    color: aqua;
+.ansatte {
+	height: 100vh;
+	background-color: blueviolet;
 }
 
-.contentcontact__contact {
-	padding-right: 25%;
-    position: absolute;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    color: white;
-    background-color: black;
-}
-
-.formElements {
-    padding-top: 30%;
-	width: 100%;
-}
-
-.btn {
-    background-color: white;
-}
-
-.contentcontact__contact--elements {
-    width: 70%;
-    height: 30%;
-}
-
-.ansatteContain {
-
-}
-
-.picture1Holder {
-    display: flex !important;
-    margin-top: 50px;
-    margin-left: 50px;
-}
-
-.picture1__text {
-    margin-left: 20px;
-}
-
-.picture2Holder {
-    display: flex !important;
-    margin-top: 50px;
-    margin-left: 50px;
-}
-
-.picture2__text {
-    margin-left: 20px;
-}
-
-.picture1 {
-    background-color: antiquewhite;
-    width: 100px;
-    height: 100px;
-}
-
-.picture2 {
-    background-color: antiquewhite;
-    width: 100px;
-    height: 100px;
+.contact {
+	height: 100vh;
+	background-color: azure;
 }
 
 .footer {
-    background-color: antiquewhite;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    height: 20%;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	height: 20%;
+	width: 100%;
+	background-color: aqua;
 }
+
+.imageContainer1 {
+	margin-left: auto;
+	padding-left: 30%;
+	margin-top: 50%;
+}
+
+.imageContainer2 {
+	margin-left: auto;
+	padding-left: 30%;
+	margin-top: 10%;
+}
+
+.image1 {
+	background-color: aquamarine;
+	width: 200px;
+	height: 200px;
+}
+
+.image2 {
+	background-color: aquamarine;
+	width: 200px;
+	height: 200px;
+}
+
