@@ -94,11 +94,12 @@ export default {
     },
     enemyHandler() {
       for (const [key, value] of Object.entries(this.world.wo)) {
-        if (value.tag && value.tag == "enemy") {
+        if (value?.tag && value?.tag == "enemy") {
           value.entity.y -=1;
-          if (value.entity.y < -50) {
-            console.log("Jaa", this.world.wo[`${key}`]);
+          if (value.entity?.y < 100 && value.entity !== null) {
+            //console.log("Jaa", this.world.wo[`${key}`].entity.parent);
             this.world.wo[`${key}`].entity.parent.removeChild(this.world.wo[`${key}`].entity);
+            this.world.wo[`${key}`] = null;
           }
         }
       }
